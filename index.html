@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>YOGA WEBSITE</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <!-- css stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/fd2b50d5dc.js" crossorigin="anonymous"></script>
+  <!-- bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <section id="title">
+    <nav class="navbar  navbar-expand-md  navbar-light fixed-top text-center">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="data:image/png;base64,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" / height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" axis-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportContent">
+          <ul class="navbar-nav nav-tabs ml-auto">
+            <li class="nav-item">
+              <a class="text-white nav-link mx-3" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="text-white nav-link mx-3 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                ABOUT
+              </a>
+              <div class="dropdown-menu text-center bg-info" aria-labelledby="navbarDropdown">
+                <a class="text-white dropdown-item" href="#cardarea">YOGA</a>
+                <a class="text-white dropdown-item " href="https://www.theravada.gr/en/meditation/?gclid=CjwKCAjwnPOEBhA0EiwA609ReYxvMdwH8v7TLeJZ1H5M0ceNvNw21Z9_BRCfwx9oGSUMU61r-U_2ARoCrCgQAvD_BwE">MINDFULLNESS</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link mx-3" href="">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=" container text-center text-black headerset">
+      <h4>THE CESSATION OF THE <br>MODIFICATION OF THE MIND</h4>
+      <h1>YOGA .</h1>
+    </div>
+  </section>
+  <!-- 1ST MINI SECTION -->
+  <section id="namaste">
+    <div class="container">
+      <div class="heading">
+        <h2>NAMASTE</h2>
+      </div>
+      <div class="paragraph">
+        <p>Yoga is all about integration of the body mind and spirit, Yoga is the lotus flower that is symbolic to personal growth, like the lotus flower we have to grow through the darkness and dirt so that we are able come into the light and blossom. Through yoga mindfulness, meditation, and healing you can strengthen who you are and find peace with your journey.</p>
+      </div>
+    </div>
+  </section>
+  <!-- picture area -->
+  <section id="cardarea">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card m1">
+         <a href="https://www.youtube.com/watch?v=_ncVo7Ml6kE">
+           <img class="img img1" src="https://www.superprof.co.in/blog/wp-content/uploads/2017/11/online-yoga-resources.jpeg" height="250" width="250" alt="">
+         </a>
+         <div class="card-body">
+           <h2 class="card-title">YOGA</h2>
+           <p class="card-text">Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six orthodox philosophical schools of Hinduism. There is a broad variety of yoga schools, practices, and goals in Hinduism, Buddhism, and Jainism.</p>
+         </div>
+       </div>
+        </div>
+        <div class="col-lg-4 ">
+          <div class="card m1">
+            <a href="https://www.youtube.com/watch?v=_ncVo7Ml6kE">
+              <img class="img img1" src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lZGl0YXRpb258ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" height="250" width="250" alt="">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">MEDITATION</h2>
+              <p class="card-text">Meditation is a practice where an individual uses a technique – such as mindfulness, or focusing the mind on a particular object, thought, or activity – to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 ">
+          <div class="card m1">
+            <a href="https://www.youtube.com/watch?v=_ncVo7Ml6kE">
+              <img class="img img1" src="https://post.healthline.com/wp-content/uploads/2019/11/Ayurvedic-herb-herb-turmeric-indian-spices-732x549-thumbnail.jpg" height="250" width="250" alt="">
+            </a>
+            <div class="card-body">
+              <h2 class="card-title">AYURVEDA</h2>
+              <p class="card-text">Ayurveda is an alternative medicine system with historical roots in the Indian subcontinent. The theory and practice of Ayurveda is pseudoscientific. The Indian Medical Association characterises the practice of modern medicine by Ayurvedic practitioners as quackery. </p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+  <!-- 2ND MINI AREA -->
+  <section id="uniquebalance">
+    <div class="container">
+      <div class="heading">
+        <h2>YOUR UNIQUE BALANCE</h2>
+      </div>
+      <div class="paragraph">
+        <p>"There is a part of you that longs to function at its highest potential, it calls to both body and mind, <br>seeking a state of pure-equilibrium.
+          Achieving this balance lies in your ability to look within and be confident <br>following your own unique path."</p>
+      </div>
+    </div>
+  </section>
+  <!-- lessons of Ramdev -->
+  <section id="lessons">
+    <div class="container">
+      <div class="heading">
+        <h2>YOG ASANS</h2>
+        <span>Click on the Pictures for Full Detail Of Asanas</span>
+      </div>
+        <div class="row card1">
+          <div class="col-lg-4 ">
+            <div class="card m1">
+              <a href="https://www.youtube.com/watch?v=PneqOh9TvzI">
+                <img class="img" src="https://workouttrends.com/wp-content/uploads/2014/08/bharadvajasana-thumbnail.jpg" height="250" width="250" alt=""></a>
+              <div class="card-body">
+                <h2 class="card-title">BHARADVAJASANA</h2>
+                <p class="card-text">
+                <ul>
+                  <li>Tones Waist and Improve BMR</li>
+                  <li>Relaxes Spine and Neck</li>
+                  <li>Opens Chest Cavity for Pranayama</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ">
+            <div class="card m1">
+              <a href="https://www.youtube.com/watch?v=0UOsDyM4UqA">
+                <img class="img" src="https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-Setu-Bandha-Sarvangasana-thumbnail.jpg" height="250" width="250" alt=""></a>
+              <div class="card-body">
+                <h2 class="card-title">SETU BANDHASANA</h2>
+                <p class="card-text">
+                <ul>
+                  <li>Strengthens Neck and Shoulders</li>
+                  <li>Massages Abdominal Organs ans Kidneys</li>
+                  <li>Tones Lower Back and Calves</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ">
+            <div class="card m1">
+              <a href="https://www.youtube.com/watch?v=BXIXv2q2mXQ">
+                <img class="img" src="https://workouttrends.com/wp-content/uploads/2014/08/Bow-pose-Dhanurasana-thumbnail.jpg" height="250" width="250" alt=""></a>
+              <div class="card-body">
+                <h2 class="card-title">DHANURASANA</h2>
+                <p class="card-text">
+                <ul>
+                  <li>Tones Lower Back,Thighs and Buttocks</li>
+                  <li>Stretches Quads,Ankles and Forearms</li>
+                  <li>Opens Chest Cavity and Strengthens Lungs</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 ">
+              <div class="card m1">
+                <a href="https://www.youtube.com/watch?v=mkJ2TlO5XBI">
+                  <img class="img" src="https://workouttrends.com/wp-content/uploads/2014/08/Cows-face-pose-thumbnail.jpg" height="250" width="250" alt=""></a>
+                <div class="card-body">
+                  <h2 class="card-title">GOMUKHASANA</h2>
+                  <p class="card-text">
+                  <ul>
+                    <li>Improves Back Flexibility</li>
+                    <li>Enhances Lung Capacity</li>
+                    <li>Opens Up Hips and Corrects seated Posture </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 ">
+              <div class="card m1">
+                <a href="https://www.youtube.com/watch?v=7_HdnQYS84Q">
+                  <img class="img" src="https://workouttrends.com/wp-content/uploads/2014/08/Vajra-Kapotasana-thumbnail.jpg" height="250" width="250" alt=""></a>
+                <div class="card-body">
+                  <h2 class="card-title">VAJRA KAPOTASANA</h2>
+                  <p class="card-text">
+                  <ul>
+                    <li>Increases Blood Circulation in Head </li>
+                    <li>Strengthens Shoulders and Knees </li>
+                    <li>Stretches Quadriceps and Chest Muscles </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 ">
+              <div class="card m1">
+                <a href="https://workouttrends.com/wp-content/uploads/2014/08/Sukhasana-Easy-Pose-thumbnail.jpg">
+                  <img class="img" src="https://workouttrends.com/wp-content/uploads/2014/08/Sukhasana-Easy-Pose-thumbnail.jpg" height="250" width="250" alt=""></a>
+                <div class="card-body">
+                  <h2 class="card-title">SUKHASANA</h2>
+                  <p class="card-text">
+                  <ul>
+                    <li>Stretches and Tones Inner Thighs and Ankles </li>
+                    <li>Improves Posture and Ideal for Pranayama</li>
+                    <li>Good For Flat Feet</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+<div class="heading">
+        <a href="https://www.youtube.com/watch?v=ZNQoQXU_CN4">
+          <p>Click Me For Full Detailed Video Of All Asanas</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- carocel part  -->
+  <section id="caroselpart">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="text-center carousel-item active">
+            <div class="heading">
+              <h2>YOGA</h2>
+            </div>
+            <div class="paragraph">
+              <p>“Yoga is the journey of the self, through the self, to the self.” <br>― Shri Bhagavad Gita</p>
+            </div>
+          </div>
+          <div class="text-center carousel-item">
+            <div class="heading">
+              <h2>MEDITATION</h2>
+            </div>
+            <div class="paragraph">
+              <p>“Meditation brings wisdom; lack of meditation leaves ignorance. Know well what leads you forward and what <br> holds you back, and choose the path that leads to wisdom.” <br>― Buddha</p>
+            </div>
+          </div>
+          <div class="text-center carousel-item">
+            <div class="heading">
+              <h2>AYURVEDA</h2>
+            </div>
+            <div class=" paragraph">
+              <p>“Life (ayu) is the combination (samyoga) of body, senses, mind, and reincarnating soul. Ayurveda is the <br>most sacred science of life, beneficial to humans both in this world and the world beyond.” <br>-Charaka</p>
+            </div>
+          </div>
+        </div>
+        <a class=" carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- rishi part -->
+  <section id="rishi">
+    <div class="container">
+      <div class=" paragraph">
+        <p>”Change only happens in the present moment. The past is already done. The future is just energy and intention.” </p>
+      </div>
+      <p>― Kino MacGregor</p>
+    </div>
+  </section>
+  <!-- footer -->
+  <section id="footer">
+    <div class="container text-center">
+      <p>Copyright © 2021 | <br>Designed and Developed by Goverdhan Sharma  |</p>
+    </div>
+  </section>
+</body>
+
+</html>
